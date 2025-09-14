@@ -1,0 +1,196 @@
+{
+    "timestamp": "2025-09-13T22:33:17.309969",
+    "bridge_model": [
+        {
+            "component_id": "TWR-N",
+            "component_type": "Tower",
+            "geometry": {
+                "position_base": [
+                    50,
+                    0,
+                    0
+                ],
+                "dimensions": [
+                    10,
+                    15,
+                    80
+                ]
+            },
+            "material": "Concrete",
+            "sensors": [
+                {
+                    "sensor_id": "ST002",
+                    "measurement_type": "Strain",
+                    "value": 50.4796,
+                    "quality_flag": "GOOD"
+                },
+                {
+                    "sensor_id": "AC002",
+                    "measurement_type": "Accelerometer",
+                    "value": -0.0508,
+                    "quality_flag": "GOOD"
+                }
+            ]
+        },
+        {
+            "component_id": "TWR-S",
+            "component_type": "Tower",
+            "geometry": {
+                "position_base": [
+                    450,
+                    0,
+                    0
+                ],
+                "dimensions": [
+                    10,
+                    15,
+                    80
+                ]
+            },
+            "material": "Concrete",
+            "sensors": []
+        },
+        {
+            "component_id": "DECK-MAIN",
+            "component_type": "DeckSegment",
+            "geometry": {
+                "start_point": [
+                    0,
+                    0,
+                    20
+                ],
+                "dimensions": [
+                    500,
+                    20,
+                    2
+                ]
+            },
+            "material": "Steel",
+            "sensors": [
+                {
+                    "sensor_id": "ST001",
+                    "measurement_type": "Strain",
+                    "value": 150.0726,
+                    "quality_flag": "GOOD"
+                },
+                {
+                    "sensor_id": "AC001",
+                    "measurement_type": "Accelerometer",
+                    "value": -0.003,
+                    "quality_flag": "GOOD"
+                },
+                {
+                    "sensor_id": "TM001",
+                    "measurement_type": "Temperature",
+                    "value": 24.0445,
+                    "quality_flag": "GOOD"
+                }
+            ]
+        },
+        {
+            "component_id": "CBL-M-E",
+            "component_type": "MainCable",
+            "geometry": {
+                "start_anchor": [
+                    0,
+                    5,
+                    22
+                ],
+                "end_anchor": [
+                    500,
+                    5,
+                    22
+                ],
+                "tower_saddles": [
+                    [
+                        50,
+                        5,
+                        80
+                    ],
+                    [
+                        450,
+                        5,
+                        80
+                    ]
+                ],
+                "sag_midpoint": 40
+            },
+            "material": "Steel",
+            "sensors": [
+                {
+                    "sensor_id": "DS001",
+                    "measurement_type": "Displacement",
+                    "value": 10.3282,
+                    "quality_flag": "GOOD"
+                }
+            ]
+        },
+        {
+            "component_id": "CBL-M-W",
+            "component_type": "MainCable",
+            "geometry": {
+                "start_anchor": [
+                    0,
+                    -5,
+                    22
+                ],
+                "end_anchor": [
+                    500,
+                    -5,
+                    22
+                ],
+                "tower_saddles": [
+                    [
+                        50,
+                        -5,
+                        80
+                    ],
+                    [
+                        450,
+                        -5,
+                        80
+                    ]
+                ],
+                "sag_midpoint": 40
+            },
+            "material": "Steel",
+            "sensors": []
+        },
+        {
+            "component_id": "CBL-V-N1",
+            "component_type": "SuspenderCable",
+            "geometry": {
+                "main_cable_connection": [
+                    150,
+                    5,
+                    55
+                ],
+                "deck_connection": [
+                    150,
+                    5,
+                    21
+                ]
+            },
+            "material": "Steel",
+            "sensors": []
+        },
+        {
+            "component_id": "CBL-V-S1",
+            "component_type": "SuspenderCable",
+            "geometry": {
+                "main_cable_connection": [
+                    350,
+                    5,
+                    55
+                ],
+                "deck_connection": [
+                    350,
+                    5,
+                    21
+                ]
+            },
+            "material": "Steel",
+            "sensors": []
+        }
+    ]
+}
